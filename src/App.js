@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+
+import BarSide from "./components/BarSide/BarSide";
+import Contenido from "./pages/Contenido";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className="h-dvh bg-[#121212] grid grid-cols-1 grid-rows-[1fr_56px]"
+    >
+      <Contenido />
+      <BarSide />
     </div>
   );
 }
